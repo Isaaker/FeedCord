@@ -1,5 +1,5 @@
 # Set the desired platform for the build stage
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0.10-bookworm AS build
 WORKDIR /src
 COPY ["FeedCord.csproj", "./"]
 COPY ["src", "./src"]
